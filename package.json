@@ -1,0 +1,26 @@
+{
+  "name": "ridecell-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run-tests": "wdio wdio.conf.js",
+    "generateMochawesome": "marge ./reports/myFile.json --reportTitle 'My Project Results'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wdio-allure-reporter": "^0.6.1",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-json-reporter": "^0.3.1",
+    "wdio-junit-reporter": "^0.4.2",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-mochawesome-reporter": "^1.3.0",
+    "wdio-sauce-service": "^0.4.8",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.12.0"
+  },
+  "dependencies": {
+    "mochawesome-report-generator": "^3.1.2"
+  }
+}
