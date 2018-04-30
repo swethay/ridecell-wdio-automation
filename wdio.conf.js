@@ -127,7 +127,10 @@ exports.config = {
     reporters: ['dot','spec','junit','allure','json','mochawesome'],
     reporterOptions: {
         outputDir: './reports',
-        mochawesome_filename: './reports/myFile.json'
+        mochawesome_filename: './myFile.json',
+        allure: {
+            outputDir: './reports/allure-results'
+        }
     },
     
     //

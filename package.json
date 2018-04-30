@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run-tests": "wdio wdio.conf.js",
-    "generateMochawesome": "marge ./reports/myFile.json --reportTitle 'My Project Results'"
+    "test": "wdio wdio.conf.js",
+    "generateMochawesome": "marge ./reports/myFile.json --reportTitle 'My Project Results'",
+    "generate-allure-report": "allure generate ./reports/allure-results/ --clean && allure open"
   },
   "author": "",
   "license": "ISC",
